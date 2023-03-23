@@ -15,10 +15,6 @@ ROI_right = 150
 ROI_left = 350
 
 
-def test():
-    print("hello world")
-
-
 def cal_accum_avg(frame, accumulated_weight):
 
     global background
@@ -38,7 +34,7 @@ def segment_hand(frame, threshold=25):
     _, thresholded = cv2.threshold(diff, threshold, 255, cv2.THRESH_BINARY)
 
     # Fetching contours in the frame (These contours can be of hand or any other object in foreground) ...
-    image, contours, hierarchy = cv2.findContours(
+    contours, hierarchy = cv2.findContours(
         thresholded.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
     # If length of contours list = 0, means we didn't get any contours...
