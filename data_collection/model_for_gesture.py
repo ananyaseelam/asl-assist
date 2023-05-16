@@ -84,7 +84,7 @@ while True:
             cv2.drawContours(
                 frame_copy, [hand_segment + (ROI_right, ROI_top)], -1, (255, 0, 0), 1)
 
-            cv2.imshow("Thesholded Hand Image", thresholded)
+            cv2.imshow("Thresholded Hand Image", thresholded)
 
             thresholded = cv2.resize(thresholded, (64, 64))
             thresholded = cv2.cvtColor(thresholded, cv2.COLOR_GRAY2RGB)
