@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>water.71f24f1a-f4fd-11ed-8818-acde48001122.jpg</filename>
+	<path>/Users/ananyaseelam/junior/sp23/ai-prac/asl-assist/detectWordsv2/Tensorflow/workspace/images/train/water.71f24f1a-f4fd-11ed-8818-acde48001122.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Water</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>584</xmin>
+			<ymin>343</ymin>
+			<xmax>858</xmax>
+			<ymax>711</ymax>
+		</bndbox>
+	</object>
+</annotation>

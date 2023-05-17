@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>please.89183286-f4fd-11ed-8818-acde48001122.jpg</filename>
+	<path>/Users/ananyaseelam/junior/sp23/ai-prac/asl-assist/detectWordsv2/Tensorflow/workspace/images/train/please.89183286-f4fd-11ed-8818-acde48001122.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Please</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>482</xmin>
+			<ymin>443</ymin>
+			<xmax>836</xmax>
+			<ymax>689</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -10,7 +10,7 @@ from object_detection.protos import pipeline_pb2
 from google.protobuf import text_format
 
 
-WORKSPACE_PATH = '/Users/tanvinamjoshi/desktop/asl-assist/detectWords/Tensorflow/workspace'
+WORKSPACE_PATH = '/Users/ananyaseelam/junior/sp23/ai-prac/asl-assist/detectWords/Tensorflow/workspace'
 SCRIPTS_PATH = 'Tensorflow/scripts'
 APIMODEL_PATH = 'Tensorflow/models'
 ANNOTATION_PATH = WORKSPACE_PATH+'/annotations'
