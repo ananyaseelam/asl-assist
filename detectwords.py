@@ -85,12 +85,10 @@ def detect_words():
         # Logic to Print out the String of Words
 
         threshold = 0.6
-        print(category_index)
         if np.amax(detections['detection_scores']) > threshold:
             bestGuessindex = detections['detection_classes'][np.argmax(
                 detections['detection_scores'])]
             bestGuess = category_index[bestGuessindex+1]['name']
-            print(bestGuess)
 
             if len(sentence) > 0:
                 if bestGuess != sentence[-1]:
@@ -103,7 +101,7 @@ def detect_words():
 
         cv2.rectangle(image_np_with_detections, (0, 0),
                       (width, 40), (245, 117, 16), -1)
-        cv2.putText(image_np_with_detections, 'Welcome to ASL-ASSIST! To quit, press q,otherwise start signing anytime!', (3, 30),
+        cv2.putText(image_np_with_detections, 'Welcome to ASL-ASSIST! To quit, press q, otherwise start signing anytime!', (3, 30),
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
 
         cv2.rectangle(image_np_with_detections, (0, 40),

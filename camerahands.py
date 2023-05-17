@@ -127,6 +127,16 @@ def run_fingerspelling():
                 x_max += 20
                 cv2.rectangle(frame, (x_min, y_min),
                               (x_max, y_max), (0, 255, 0), 2)
+
+        cv2.rectangle(frame, (0, 0),
+                      (w, 40), (245, 117, 16), -1)
+        cv2.putText(frame, 'Welcome to ASL-ASSIST! To quit, press ESC,otherwise start finger-spelling anytime! ', (3, 30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+        cv2.rectangle(frame, (0, 40),
+                      (w, 80), (245, 117, 16), -1)
+        cv2.putText(frame, 'When you want to predict the letter press the SPACE key ', (3, 70),
+                    cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+
         cv2.imshow("Frame", frame)
 
     cap.release()
